@@ -10,7 +10,7 @@
     "sass-watch": "sass --watch ."
   },
   "devDependencies": {
-    "sass": "^1.85.1",
+    "sass": "^1.80.6",
     "vite": "^6.2.0"
   }
 }
