@@ -4,9 +4,10 @@
     --color-light: #FFFFFF;
 
     --color-dark: #141414;
-    --color-dark-10: #141414;
-    --color-dark-15: #1A1A1A;
-    --color-dark-40: #262626;
+    --color-dark-10: #1A1A1A;
+    --color-dark-15: #262626;
+    --color-dark-20: #333333;
+    --color-dark-40: #666666;
 
     --color-gray-50: #7E7E81;
     --color-gray-60: #98989A;
@@ -16,6 +17,8 @@
     --color-red: #FF5500;
 
     --border: #{rem(1) solid var(--color-dark-15)};
+
+    --shadow: 0 0 0 #{rem(3)} #191919;
 
     --font-family-base: "Inter", sans-serif;
     --font-family-accent: "Kambh Sans", sans-serif;

@@ -241,14 +241,16 @@ svg * {
 :root {
   --color-light: #FFFFFF;
   --color-dark: #141414;
-  --color-dark-10: #141414;
-  --color-dark-15: #1A1A1A;
-  --color-dark-40: #262626;
+  --color-dark-10: #1A1A1A;
+  --color-dark-15: #262626;
+  --color-dark-20: #333333;
+  --color-dark-40: #666666;
   --color-gray-50: #7E7E81;
   --color-gray-60: #98989A;
   --color-accent: #FFD11A;
   --color-red: #FF5500;
   --border: 0.0625rem solid var(--color-dark-15);
+  --shadow: 0 0 0 0.1875rem #191919;
   --font-family-base: "Inter", sans-serif;
   --font-family-accent: "Kambh Sans", sans-serif;
   --container-width: 100rem;
@@ -441,7 +443,7 @@ a[class] {
 }
 .header__body {
   padding-block: 1.5rem;
-  background-color: var(--color-ark-10);
+  background-color: var(--color-dark-10);
 }
 .header__body-inner {
   display: flex;
@@ -454,4 +456,26 @@ a[class] {
   .header__overlay {
     display: contents;
   }
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.header__menu-link {
+  padding: 0.875rem 1.5rem;
+  color: var(--color-gray-50);
+}
+.header__menu-link.is-active {
+  color: var(--color-light);
+  font-weight: 500;
+  background-color: var(--color-dark);
+  border: var(--border);
+  border-radius: 0.625rem;
+  pointer-events: none;
+}
+
+.logo {
+  max-width: clamp(7.875rem, 7.0306372549rem + 3.4640522876vw, 11.1875rem);
 }/*# sourceMappingURL=main.css.map */
