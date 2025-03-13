@@ -414,6 +414,26 @@ a[class] {
   transition-duration: 0s !important;
 }
 
+.icon {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}
+.icon::after {
+  --size: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+  content: "";
+  flex-shrink: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon--yellow-arrow::after {
+  background-image: url("/src/public/icons/icon-arrow-up.svg");
+}
+
 .header__promo {
   padding-block: 1.25rem;
   text-align: center;
