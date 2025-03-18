@@ -6,7 +6,7 @@
     column-gap: rem(10);
 
     &::after {
-        --size: #{rem(24)};
+        --size: #{rem(17)};
 
         @include square(var(--size));
 
@@ -15,7 +15,13 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+
+        @include laptop {
+            --size: #{rem(14)};
+        }
     }
+
+
 
     &--yellow-arrow {
         &::after {
