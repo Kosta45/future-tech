@@ -11,7 +11,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header" data-js-header>
     <div class="header__promo">
       <div class="header__promo-inner container">
         <a href="/" class="header__promo-link">
@@ -28,7 +28,7 @@
           <img src="/src/public/icons/logo.svg" alt="" class="logg__image" width="179" height="50" loading="lazy">
         </a>
 
-        <div class="header__overlay">
+        <div class="header__overlay" data-js-header-overlay>
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
@@ -49,7 +49,8 @@
         </div>
 
 
-        <button aria-label="Open menu" class="header__burger-button burger-button visible-mobile" type="button">
+        <button aria-label="Open menu" class="header__burger-button burger-button visible-mobile" type="button"
+          data-js-header-burger-button>
           <span class="burger-button__line"></span>
           <span class="burger-button__line"></span>
           <span class="burger-button__line"></span>
