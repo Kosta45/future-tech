@@ -1,14 +1,20 @@
-@use 'normalize';
-@use 'fonts';
+@use "normalize";
+@use "fonts";
 @use "variables";
 @use "utils";
-@use 'globals';
+@use "globals";
 
-@use 'blocks/icon';
-@use 'blocks/burger-button';
-@use 'blocks/button';
-@use 'blocks/header';
-@use 'blocks/logo';
-@use 'blocks/badge';
-@use 'blocks/socials';
-@use 'blocks/footer';
+@use "blocks/icon";
+@use "blocks/burger-button";
+@use "blocks/button";
+@use "blocks/header";
+@use "blocks/logo";
+@use "blocks/badge";
+@use "blocks/socials";
+@use "blocks/footer";
+
+@use "blocks/metrics";
+@use "blocks/team";
+@use "blocks/resources-preview";
+@use "blocks/advantage-card";
+@use "blocks/hero";
