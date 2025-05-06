@@ -40,7 +40,7 @@
 
   &__resources-preview {
     grid-area: resources-preview;
-    background: url("../../images/resources-preview/background.png");
+    background: url("../../images/resources-preview/background.png") 0 no-repeat;
     padding-left: rem(80);
     padding-bottom: rem(80);
     border-left: var(--border);

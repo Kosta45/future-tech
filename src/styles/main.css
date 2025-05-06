@@ -808,6 +808,14 @@ button[aria-label]::before {
   font-weight: 600;
 }
 
+.resources-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  row-gap: 1.875rem;
+}
+
 .hero__main {
   display: grid;
   grid-template-columns: 60% auto;
@@ -836,7 +844,7 @@ button[aria-label]::before {
 }
 .hero__resources-preview {
   grid-area: resources-preview;
-  background: url("../../images/resources-preview/background.png");
+  background: url("../../images/resources-preview/background.png") 0 no-repeat;
   padding-left: 5rem;
   padding-bottom: 5rem;
   border-left: var(--border);
