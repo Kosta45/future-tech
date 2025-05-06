@@ -28,13 +28,6 @@
     }
   }
 
-  &__resources-preview {
-    grid-area: resources-preview;
-    padding-left: rem(80);
-    padding-bottom: rem(80);
-    border-left: var(--border);
-  }
-
   &__title {
     &:not(:last-child) {
       margin-bottom: rem(20);
@@ -43,5 +36,13 @@
 
   &__metrics {
     grid-area: metrics;
+  }
+
+  &__resources-preview {
+    grid-area: resources-preview;
+    background: url("../../images/resources-preview/background.png");
+    padding-left: rem(80);
+    padding-bottom: rem(80);
+    border-left: var(--border);
   }
 }
