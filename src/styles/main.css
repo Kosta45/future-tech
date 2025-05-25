@@ -460,7 +460,7 @@ button[aria-label]::before {
   }
 }
 .icon--yellow-arrow::after {
-  background-image: url("/src/public/icons/icon-arrow-up.svg");
+  background-image: url("/icons/icon-arrow-up.svg");
 }
 
 .burger-button {
@@ -808,12 +808,56 @@ button[aria-label]::before {
   font-weight: 600;
 }
 
+.team {
+  --personImageSize: 3.75rem;
+  display: flex;
+  padding: 0.625rem;
+  background-color: var(--color-dark-10);
+  border-radius: 6.25rem;
+}
+.team__person {
+  width: var(--persinImageSize);
+  background-color: var(--color-dark-15);
+  border-radius: 50%;
+  border: 0.125rem solid var(--color-dark-40);
+}
+.team__person:not(:first-child) {
+  margin-left: calc(var(--personImageSize) / 4 * -1);
+}
+
 .resources-preview {
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: start;
   row-gap: 1.875rem;
+}
+.resources-preview__body {
+  display: grid;
+  row-gap: 0.875rem;
+}
+
+.advantage-card {
+  display: grid;
+  row-gap: 1.875rem;
+}
+.advantage-card__link {
+  --circleSize: 3.125rem;
+  --circleMarginLeft: 1.25rem;
+  position: relative;
+  display: grid;
+  row-gap: 0.25rem;
+  padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+}
+.advantage-card__link::after {
+  width: var(--circleSize);
+  height: var(--circleSize);
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  content: "";
+  right: 0;
+  background: url("");
 }
 
 .hero__main {
@@ -848,4 +892,19 @@ button[aria-label]::before {
   padding-left: 5rem;
   padding-bottom: 5rem;
   border-left: var(--border);
+}
+.hero__advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.hero__advantages-item {
+  --paddingX: 5rem;
+  padding-block: 3.125rem;
+}
+.hero__advantages-item:not(:first-child) {
+  padding-left: var(--paddingX);
+}
+.hero__advantages-item:not(:last-child) {
+  padding-right: var(--paddingX);
+  border-right: var(--border);
 }/*# sourceMappingURL=main.css.map */
