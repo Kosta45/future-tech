@@ -2,11 +2,13 @@
 
 .hero {
   &__main {
-    display: grid;
-    grid-template-columns: 60% auto;
-    grid-template-areas:
-      "body resources-preview"
-      "metrics resources-preview";
+    @include tablet-above {
+      display: grid;
+      grid-template-columns: 60% auto;
+      grid-template-areas:
+        "body resources-preview"
+        "metrics resources-preview";
+    }
   }
 
   &__body {
@@ -14,6 +16,17 @@
     padding-top: rem(150);
     padding-right: rem(50);
     padding-bottom: rem(100);
+
+    @include laptop {
+      padding-top: rem(100);
+      padding-right: rem(40);
+    }
+
+    @include tablet {
+      padding-right: 0;
+      padding-top: rem(40);
+      padding-bottom: rem(30);
+    }
   }
 
   &__subtitle {
@@ -45,6 +58,11 @@
     padding-left: rem(80);
     padding-bottom: rem(80);
     border-left: var(--border);
+
+    @include laptop {
+      padding-left: rem(50);
+      padding-bottom: rem(50);
+    }
   }
 
   &__advantages {
@@ -59,6 +77,12 @@
       --paddingX: #{rem(80)};
 
       padding-block: rem(50);
+
+      @include laptop {
+        --paddingX: #{rem(50)};
+
+        padding-block: rem(40);
+      }
 
       &:not(:first-child) {
         padding-left: var(--paddingX);
