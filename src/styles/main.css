@@ -298,6 +298,30 @@ svg * {
   }
 }
 
+.full-vw-line {
+  position: relative;
+}
+.full-vw-line::before, .full-vw-line::after {
+  position: absolute;
+  width: calc((100vw - var(--container-width)) / 2);
+  height: 0.0625rem;
+  background-color: var(--color-dark-15);
+}
+.full-vw-line--top::before {
+  content: "";
+  bottom: 100%;
+}
+.full-vw-line--bottom::after {
+  content: "";
+  top: 100%;
+}
+.full-vw-line--right::before, .full-vw-line--right::after {
+  left: 100%;
+}
+.full-vw-line--left::before, .full-vw-line--left::after {
+  right: 100%;
+}
+
 html.is-lock {
   overflow: hidden;
 }
@@ -857,7 +881,12 @@ button[aria-label]::before {
   translate: 0 -50%;
   content: "";
   right: 0;
-  background: url("");
+  background: url("../../../icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
+  border-radius: 50%;
+}
+.advantage-card__details {
+  font-size: clamp(0.875rem, 0.7794117647rem + 0.3921568627vw, 1.25rem);
+  font-family: var(--font-family-accent);
 }
 
 .hero__main {
@@ -885,6 +914,7 @@ button[aria-label]::before {
 }
 .hero__metrics {
   grid-area: metrics;
+  border-top: var(--border);
 }
 .hero__resources-preview {
   grid-area: resources-preview;
@@ -892,6 +922,9 @@ button[aria-label]::before {
   padding-left: 5rem;
   padding-bottom: 5rem;
   border-left: var(--border);
+}
+.hero__advantages {
+  border-block: var(--border);
 }
 .hero__advantages-list {
   display: grid;
